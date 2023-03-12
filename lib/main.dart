@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_store_app_ui/pages/home_page.dart';
+import 'package:grocery_store_app_ui/pages/item_page.dart';
 import 'package:grocery_store_app_ui/pages/splash_screen.dart';
 
 void main() {
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => SplashScreen(),
         "homePage": (context) => HomePage(),
+        "itemPage": (context) => ItemPage(),
       },
     );
   }
