@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -17,8 +16,8 @@ class SplashScreen extends StatelessWidget {
               height: 300,
             ),
             Container(
-              margin: EdgeInsets.only(top: 50),
-              child: Text(
+              margin: const EdgeInsets.only(top: 50),
+              child: const Text(
                 "Buy Fresh Groceries",
                 style: TextStyle(
                     color: Color(0xFF00A368),
@@ -26,18 +25,19 @@ class SplashScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             InkWell(
               onTap: () {
                 Navigator.pushNamed(context, "homePage");
               },
               child: Ink(
-                padding: EdgeInsets.symmetric(horizontal: 80, vertical: 16),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 80, vertical: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Color(0xFF00A368),
+                  color: const Color(0xFF00A368),
                 ),
-                child: Text(
+                child: const Text(
                   " Get Started",
                   style: TextStyle(
                     fontSize: 18,

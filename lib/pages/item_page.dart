@@ -14,11 +14,11 @@ class ItemPage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.all(15),
+                margin: const EdgeInsets.all(15),
                 height: 300,
                 width: double.infinity,
                 alignment: Alignment.topLeft,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage("assets/images/2.png"),
                   ),
@@ -27,7 +27,7 @@ class ItemPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 30,
                     color: Color(0xFF00A368),
@@ -36,9 +36,9 @@ class ItemPage extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.43,
-                margin: EdgeInsets.only(top: 20),
-                padding: EdgeInsets.all(15),
-                decoration: BoxDecoration(
+                margin: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.all(15),
+                decoration: const BoxDecoration(
                   color: Color(0xFF00A368),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
@@ -49,11 +49,11 @@ class ItemPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 15),
+                      padding: const EdgeInsets.only(top: 10, bottom: 15),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Fruit Title",
                             style: TextStyle(
                                 color: Colors.white,
@@ -63,16 +63,16 @@ class ItemPage extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                child: Icon(CupertinoIcons.minus),
+                                child: const Icon(CupertinoIcons.minus),
                               ),
                               Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
-                                child: Text(
+                                margin: const EdgeInsets.symmetric(horizontal: 10),
+                                child: const Text(
                                   "01",
                                   style: TextStyle(
                                       fontSize: 18,
@@ -81,12 +81,12 @@ class ItemPage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                child: Icon(CupertinoIcons.plus),
+                                child: const Icon(CupertinoIcons.plus),
                               ),
                             ],
                           ),
@@ -95,7 +95,7 @@ class ItemPage extends StatelessWidget {
                     ),
                     Row(
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.star,
                           color: Colors.amber,
@@ -111,10 +111,10 @@ class ItemPage extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 20),
+                      padding: const EdgeInsets.symmetric(vertical: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "Description",
                             style: TextStyle(
@@ -137,7 +137,7 @@ class ItemPage extends StatelessWidget {
                     ),
                     Row(
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "Delivery Time",
                           style: TextStyle(
@@ -167,7 +167,7 @@ class ItemPage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

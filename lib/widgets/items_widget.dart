@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ItemsWidget extends StatelessWidget {
@@ -9,10 +8,10 @@ class ItemsWidget extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 10, right: 10, top: 10),
+          padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text(
                 "Top",
                 style: TextStyle(
@@ -32,10 +31,10 @@ class ItemsWidget extends StatelessWidget {
           ),
         ),
         GridView.count(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           crossAxisCount: 2,
           childAspectRatio: 0.8,
           shrinkWrap: true,
@@ -43,7 +42,7 @@ class ItemsWidget extends StatelessWidget {
           children: [
             for (int i = 1; i < 8; i++)
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
@@ -62,7 +61,7 @@ class ItemsWidget extends StatelessWidget {
                         Navigator.pushNamed(context, "itemPage");
                       },
                       child: Container(
-                        margin: EdgeInsets.all(10),
+                        margin: const EdgeInsets.all(10),
                         child: Image.asset(
                           "assets/images/$i.png",
                           height: 95,
@@ -70,25 +69,22 @@ class ItemsWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(bottom: 8),
-                      child: Container(
-                        // alignment: Alignment.centerLeft,
-                        child: Text(
-                          "Item title",
-                          style: TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF555555),
-                          ),
+                      child: Text(
+                        "Item title",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF555555),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.only(bottom: 8),
                       child: Container(
                         alignment: Alignment.centerLeft,
-                        child: Text(
+                        child: const Text(
                           "Fresh Fruit 2kg",
                           style: TextStyle(
                             fontSize: 14,
@@ -99,11 +95,11 @@ class ItemsWidget extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 5),
+                      padding: const EdgeInsets.symmetric(vertical: 5),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "\$20",
                             style: TextStyle(
                                 fontSize: 20,
@@ -113,12 +109,12 @@ class ItemsWidget extends StatelessWidget {
                           InkWell(
                             onTap: () {},
                             child: Container(
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: Color(0xFF00A368),
+                                color: const Color(0xFF00A368),
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add_shopping_cart,
                                 color: Colors.white,
                               ),

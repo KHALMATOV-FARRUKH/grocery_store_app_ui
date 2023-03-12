@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PopularItemsWidget extends StatelessWidget {
@@ -9,7 +8,7 @@ class PopularItemsWidget extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 10,
             right: 10,
             bottom: 5,
@@ -17,7 +16,7 @@ class PopularItemsWidget extends StatelessWidget {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text(
                 "Popular",
                 style: TextStyle(
@@ -42,8 +41,8 @@ class PopularItemsWidget extends StatelessWidget {
             children: [
               for(int i=1; i<8; i++)
               Container(
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(5),
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(5),
                 height: 100,
                 width: 150,
                 decoration: BoxDecoration(

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
@@ -9,10 +8,10 @@ class CategoriesWidget extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+          padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text(
                 "Category",
                 style: TextStyle(
@@ -36,7 +35,7 @@ class CategoriesWidget extends StatelessWidget {
             children: [
               for (int i = 1; i < 8; i++)
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   height: 50,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -52,14 +51,14 @@ class CategoriesWidget extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: Image.asset(
                           "assets/images/$i.png",
                           height: 50,
                           width: 50,
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(right: 5),
                         child: Text(
                           "Category",

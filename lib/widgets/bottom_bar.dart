@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatelessWidget {
@@ -9,14 +8,14 @@ class BottomBar extends StatelessWidget {
     return BottomAppBar(
       child: Container(
         height: 70,
-        padding: EdgeInsets.symmetric(horizontal: 20),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        decoration: const BoxDecoration(
           color: Colors.white,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               "\$120",
               style: TextStyle(
                 fontSize: 25,
@@ -27,13 +26,13 @@ class BottomBar extends StatelessWidget {
             InkWell(
               onTap: () {},
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
                 decoration: BoxDecoration(
-                  color: Color(0xFF00A368),
+                  color: const Color(0xFF00A368),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Row(
-                  children: [
+                  children: const [
                     Icon(
                       Icons.add_shopping_cart,
                       color: Colors.white,
